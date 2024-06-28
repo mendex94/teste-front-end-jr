@@ -21,7 +21,8 @@ const config: Config = {
 			},
 		},
 		dropShadow: {
-			default: "0 4px 11px 0 rgba(0, 0, 0, 0.13)",
+			sm: "0 4px 11px rgba(0, 0, 0, 0.13)",
+			md: "0 3px 19px rgba(0, 0, 0, 0.22)",
 		},
 		extend: {},
 	},
