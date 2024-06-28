@@ -7,24 +7,32 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		colors: {
-			brand: "#F71963",
-			background: {
-				input: "#F6F5F2",
-				primary: "#F4F4F4",
-				secondary: "#2A2A2A",
+		extend: {
+			colors: {
+				brand: "#F71963",
+				border: {
+					primary: "#F0F0F0",
+				},
+				background: {
+					input: "#F6F5F2",
+					primary: "#F4F4F4",
+					secondary: "#2A2A2A",
+				},
+				text: {
+					primary: "#3F3F40",
+					secondary: "#9F9F9F",
+					foreground: "#FFFFFF",
+				},
+				divider: "#DEDEDE",
 			},
-			text: {
-				primary: "#3F3F40",
-				secondary: "#9F9F9F",
-				foreground: "#FFFFFF",
+			dropShadow: {
+				sm: "0 4px 11px rgba(0, 0, 0, 0.13)",
+				md: "0 3px 19px rgba(0, 0, 0, 0.22)",
+			},
+			backgroundImage: {
+				"hero-image": "url('/banner.jpeg')",
 			},
 		},
-		dropShadow: {
-			sm: "0 4px 11px rgba(0, 0, 0, 0.13)",
-			md: "0 3px 19px rgba(0, 0, 0, 0.22)",
-		},
-		extend: {},
 	},
 	plugins: [],
 };
