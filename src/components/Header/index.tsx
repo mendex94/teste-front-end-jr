@@ -11,6 +11,7 @@ import {
 	PiTruck,
 	PiUserCircle,
 } from "react-icons/pi";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { Input } from "@/components/Input";
 
 const Header = () => {
@@ -39,7 +40,7 @@ const Header = () => {
 				</div>
 			</div>
 			<div className="py-2 px-14 flex items-center justify-between gap-24 border-b border-border-primary">
-				<Link href="/">
+				<Link href="/" className="hidden md:flex">
 					<Image
 						src="/vtex.png"
 						alt="Vtex Logo"
@@ -54,7 +55,10 @@ const Header = () => {
 						<PiMagnifyingGlass />
 					</Input.Icon>
 				</Input.Root>
-				<div className="flex h-12 gap-8">
+				<button className="md:hidden">
+					<RxHamburgerMenu className="w-8 h-8 text-text-secondary" />
+				</button>
+				<div className="hidden md:flex h-12 gap-8">
 					<button>
 						<PiBoxArrowUp className="w-8 h-8 text-text-secondary" />
 					</button>

@@ -24,6 +24,7 @@ const config: Config = {
 					foreground: "#FFFFFF",
 				},
 				divider: "#DEDEDE",
+				product: "#041E50",
 			},
 			dropShadow: {
 				sm: "0 4px 11px rgba(0, 0, 0, 0.13)",
@@ -31,6 +32,7 @@ const config: Config = {
 			},
 			backgroundImage: {
 				"hero-image": "url('/banner.jpeg')",
+				"card-image": "url('/card.jpeg')",
 			},
 		},
 	},
